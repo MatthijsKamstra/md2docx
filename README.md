@@ -8,6 +8,10 @@ pandoc -o output.docx -f markdown -t docx test.md
 sh md2docx.sh
 ```
 
+## bash
+
+- https://www.baeldung.com/linux/use-command-line-arguments-in-bash-script
+
 ## resources
 
 Convert Markdown into a Word Document - Joe Leech
