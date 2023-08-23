@@ -1,8 +1,30 @@
 # md2docx
 
+I needed to convert a markdown (.md) to an Word (.docx) document.
+Documented this process and started to add more things I needed (svg convert).
+
+## Install
+
+For this to work, you need to install pandoc
+
+```bash
+brew install pandoc
+# Homebrew can also install other software that integrates with Pandoc
+# Its rsvg-convert covers formats without SVG support
+brew install librsvg python homebrew/cask/basictex
+```
+
+Resources: https://pandoc.org/installing.html#macos
+
+## Pandoc
+
+Use Pandoc x
+
 ```bash
 pandoc -o output.docx -f markdown -t docx test.md
 ```
+
+or use a bash script
 
 ```bash
 sh md2docx.sh
